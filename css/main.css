@@ -1,0 +1,101 @@
+/* Enlaces de CSS */
+
+@import "variables.css";
+
+/* General */
+
+body {
+  background-color: var(--fondo);
+  color: var(--azul-vibrante);
+  font-family: var(--fuente-cuerpo);
+}
+
+/* Navbar */
+
+.cabecera-principal {
+  z-index: 10;
+}
+
+.logo {
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+}
+
+.enlace-nav {
+  font-family: var(--fuente-cuerpo);
+  font-weight: 600;
+  color: var(--azul-vibrante);
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Hero */
+
+.seccion-hero {
+  min-height: 100vh;
+}
+
+.columna-imagen {
+  min-height: 50vh;
+  position: relative;
+}
+
+.imagen-hero-fondo {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  object-fit: cover;
+}
+
+.columna-contenido {
+  background-color: var(--color-fondo);
+  min-height: 50vh;
+}
+
+/* Tipografías y botones */
+
+.titulo-principal {
+  font-family: var(--fuente-titulos);
+  font-weight: 500;
+  color: var(--azul-vibrante);
+  font-size: calc(1.8rem + 1.5vw);
+  line-height: 1.2;
+}
+
+.descripcion-hero {
+  font-family: var(--fuente-cuerpo);
+  color: var(--azul-texto);
+  font-size: calc(1rem + 0.2vw);
+  line-height: 1.5;
+  max-width: 480px;
+}
+
+.border-top-azul {
+  border-top: 1px solid var(--lineas);
+  width: 100%;
+}
+
+.enlace-secundario-nav {
+  font-family: var(--fuente-cuerpo);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--azul-texto);
+  text-decoration: none;
+}
+
+.btn-portfolio-pildora {
+  font-family: var(--fuente-cuerpo);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--fondo);
+  background-color: var(--azul-vibrante);
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  border: 1px solid var(--azul-texto);
+}
