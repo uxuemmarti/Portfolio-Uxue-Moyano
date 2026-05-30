@@ -1,0 +1,55 @@
+.pie-pagina {
+  background-color: var(--fondo);
+  margin-top: 60px;
+}
+
+.titulo-footer {
+  font-family: var(--fuente-texto);
+  font-weight: 500;
+  color: var(--azul-vibrante);
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.descripcion-footer {
+  font-family: var(--fuente-cuerpo);
+  color: var(--azul-texto);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 320px;
+}
+
+.subtitulo-footer {
+  font-family: var(--fuente-cuerpo);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--azul-vibrante);
+}
+
+.enlace-footer {
+  font-family: var(--fuente-cuerpo);
+  color: var(--azul-texto);
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.enlace-footer:hover {
+  color: var(--azul-vibrante);
+}
+
+.info-plana-footer {
+  font-family: var(--fuente-cuerpo);
+  color: var(--azul-texto);
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.texto-copyright {
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.8rem;
+  color: var(--azul-texto);
+  opacity: 0.5;
+  letter-spacing: 0.02em;
+}

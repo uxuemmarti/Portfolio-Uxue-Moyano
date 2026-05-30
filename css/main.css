@@ -1,6 +1,8 @@
 /* Enlaces de CSS */
 
 @import "variables.css";
+@import "components/proyectos.css";
+@import "components/footer.css";
 
 /* General */
 
