@@ -3,6 +3,7 @@
 @import "variables.css";
 @import "components/proyectos.css";
 @import "components/footer.css";
+@import "components/about.css";
 
 /* General */
 
@@ -15,6 +16,11 @@ body {
 /* Navbar */
 
 .cabecera-principal {
+  z-index: 10;
+  background-color: var(--fondo);
+}
+
+.cabecera-principal1 {
   z-index: 10;
 }
 

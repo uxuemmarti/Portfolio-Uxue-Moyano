@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>proyectos | uxuedesign</title>
+    <title>about | uxuedesign</title>
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,6 +19,7 @@
     />
     <!--Mi CSS-->
     <link rel="stylesheet" href="css/main.css" />
+
     <!--Favicon-->
     <link rel="icon" type="image/png" href="img/logouxue.png" />
   </head>
@@ -43,66 +44,55 @@
         </nav>
       </div>
     </header>
+    <!--Texto sobre mí-->
+    <main id="sobre-mi" class="seccion-sobre-mi container-fluid p-0">
+      <div class="row g-0 align-items-stretch">
+        <div
+          class="col-12 col-lg-7 columna-texto-sobre px-5 px-lg-5 d-flex flex-column"
+        >
+          <div class="bloque-manifiesto max-width-editorial">
+            <span class="etiqueta-sobre text-uppercase d-block"
+              >Un poco sobre mí</span
+            >
 
-    <!--Hero de los proyectos-->
-    <main class="seccion-proyectos container-fluid p-0">
-      <section
-        class="intro-hero-proyectos px-4 px-lg-5 d-flex flex-column justify-content-between"
-      >
-        <div class="pt-5 mt-4"></div>
+            <h2 class="saludo-sobre mb-5">
+              ¡Hola! Bienvenid@ a mi portfolio personal. Mi nombre es Uxue y soy
+              diseñadora con base en Madrid.
+            </h2>
 
-        <div class="row text-md-start text-center align-items-center my-auto">
-          <div class="col-12 col-lg-7">
-            <h1 class="titulo-seccion-gigante mb-0">Portfolio de proyectos</h1>
-          </div>
-          <div class="col-12 col-lg-5 mt-4 mt-lg-0 ps-lg-5">
-            <p class="descripcion-seccion-intro mb-0">
-              Aquí puedes encontrar una selección de mis proyectos de
-              interiores, producto y gráfico. Trabajos reales pensados para
-              resolver necesidades del día a día de las personas.
+            <p class="cuerpo-sobre mb-4">
+              Mi trabajo se centra principalmente en el interiorismo, diseño de
+              producto y diseño gráfico, con un interés especial por los dos
+              primeros.
+            </p>
+
+            <p class="cuerpo-sobre mb-4">
+              Actualmente continúo mi formación en la Universidad Europea de
+              Madrid en el Grado en Diseño Generalista. Este enfoque tan abierto
+              me ha permitido entender el diseño desde diferentes escalas y
+              contextos, conectar disciplinas entre sí y desarrollar una mirada
+              más amplia a la hora de abordar proyectos.
+            </p>
+
+            <p class="cuerpo-sobre destacable mb-0">
+              Me interesa especialmente el diseño como herramienta para mejorar
+              la experiencia y el día a día de las personas, buscando soluciones
+              que sean útiles, claras y pensadas desde el uso real.
             </p>
           </div>
         </div>
-
-        <div class="d-flex justify-content-center pb-5">
-          <a
-            href="#galeria"
-            class="texto-descubrir-puro text-uppercase text-decoration-none"
-            >Descubrir</a
-          >
-        </div>
-      </section>
-      <!--Galería de proyectos-->
-      <section id="galeria" class="zona-galeria-proyectos px-4 px-lg-5">
-        <div class="row contenedor-filtros-global">
-          <div class="col-12">
-            <div class="linea-separadora-fina mb-4"></div>
-            <div
-              class="d-flex justify-content-between align-items-center flex-wrap gap-3 pb-3"
-            >
-              <div class="bloque-botones-filtro">
-                <button class="filtro-item active" data-filter="todos">
-                  Todos los proyectos
-                </button>
-                <button class="filtro-item" data-filter="interiores">
-                  Diseño de Interiores
-                </button>
-                <button class="filtro-item" data-filter="producto">
-                  Diseño de Producto
-                </button>
-                <button class="filtro-item" data-filter="grafico">
-                  Diseño Gráfico
-                </button>
-              </div>
-              <span class="contador-proyectos-total text-uppercase"
-                >Proyectos [6]</span
-              >
-            </div>
+        <!--Foto aboout-->
+        <div class="col-12 col-lg-5 columna-imagen-sobre d-none d-lg-block">
+          <div class="contenedor-imagen-bloque">
+            <img
+              src="img/fotohero.jpeg"
+              alt="Uxue - Espacio de trabajo e inspiración"
+              class="imagen-sobre-fit"
+            />
+            <div class="capa-filtro-sobre"></div>
           </div>
         </div>
-
-        <div class="grid-proyectos pt-2"></div>
-      </section>
+      </div>
     </main>
     <!--Footer-->
     <footer

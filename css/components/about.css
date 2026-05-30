@@ -1,0 +1,66 @@
+.columna-texto-sobre {
+  padding-top: 200px;
+  padding-bottom: 120px;
+}
+
+.max-width-editorial {
+  max-width: 540px;
+}
+
+.etiqueta-sobre {
+  font-family: var(--fuente-cuerpo);
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  color: var(--azul-vibrante);
+  opacity: 0.9;
+  margin-bottom: 45px;
+}
+
+/* Título*/
+.saludo-sobre {
+  font-family: var(--fuente-titulos);
+  font-weight: 500;
+  color: var(--azul-vibrante);
+  font-size: calc(1.6rem + 1vw);
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  margin-bottom: 40px;
+}
+
+/* Cuerpo de texto */
+.cuerpo-sobre {
+  font-family: var(--fuente-cuerpo);
+  color: var(--azul-texto);
+  font-size: 1.1rem;
+  line-height: 1.8; /* Interlineado muy cómodo para lectura */
+  letter-spacing: 0.01em;
+  margin-bottom: 35px;
+}
+
+/* Último párrafo destacado */
+.cuerpo-sobre.destacable {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--azul-vibrante);
+  border-left: 2px solid var(--azul-vibrante);
+  padding-left: 25px;
+  line-height: 1.7;
+}
+
+/* Imagen */
+.columna-imagen-sobre {
+  position: relative;
+}
+
+.contenedor-imagen-bloque {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.imagen-sobre-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

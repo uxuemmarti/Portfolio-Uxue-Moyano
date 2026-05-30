@@ -1,55 +1,67 @@
-.pie-pagina {
+.pie-pagina,
+.pie-pagina-compacto {
   background-color: var(--fondo);
-  margin-top: 60px;
 }
 
+.linea-separadora-fina {
+  border-top: 1px solid var(--lineas);
+  width: 100%;
+  opacity: 0.5;
+}
+
+/* Estilos del Footer Grande (Ordenador) */
 .titulo-footer {
   font-family: var(--fuente-texto);
-  font-weight: 500;
   color: var(--azul-vibrante);
-  font-size: 1.5rem;
-  letter-spacing: -0.01em;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
-.descripcion-footer {
+.descripcion-footer,
+.info-plana-footer,
+.texto-copyright {
   font-family: var(--fuente-cuerpo);
   color: var(--azul-texto);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.5;
-  max-width: 320px;
 }
 
 .subtitulo-footer {
   font-family: var(--fuente-cuerpo);
   font-weight: 700;
   font-size: 0.75rem;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   color: var(--azul-vibrante);
 }
 
 .enlace-footer {
   font-family: var(--fuente-cuerpo);
-  color: var(--azul-texto);
-  font-size: 0.95rem;
-  text-decoration: none;
-  transition: color 0.25s ease;
-}
-
-.enlace-footer:hover {
   color: var(--azul-vibrante);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
 }
 
-.info-plana-footer {
+/* Estilos del Footer pequeño (Móvil) */
+.texto-copyright-min {
+  font-family: var(--fuente-cuerpo);
+  color: var(--azul-vibrante);
+  font-size: 0.85rem;
+}
+
+.texto-sub-min {
   font-family: var(--fuente-cuerpo);
   color: var(--azul-texto);
-  font-size: 0.95rem;
-  opacity: 0.8;
+  font-size: 0.75rem;
+  opacity: 0.7;
 }
 
-.texto-copyright {
+.enlace-min-footer {
   font-family: var(--fuente-cuerpo);
+  font-weight: 600;
+  color: var(--azul-vibrante);
+  text-decoration: none;
   font-size: 0.8rem;
-  color: var(--azul-texto);
-  opacity: 0.5;
-  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
