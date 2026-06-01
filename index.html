@@ -19,17 +19,19 @@
     />
     <!--Mi CSS-->
     <link rel="stylesheet" href="css/main.css" />
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="img/logouxue.png" />
   </head>
   <body>
     <!--Navbar y logo-->
     <header
-      class="cabecera-principal1 position-absolute top-0 start-0 w-100 py-4"
+      class="cabecera-principal1 cabecera-adaptativa position-absolute top-0 start-0 w-100 py-4 z-3"
     >
       <div
         class="container-fluid px-4 px-lg-5 d-flex justify-content-between align-items-center"
       >
         <a href="index.html" class="enlace-logo">
-          <img src="img/logouxue.png" alt="Uxue Design Logo" class="logo" />
+          <img src="img/logoblanco.png" alt="Uxue Design Logo" class="logo" />
         </a>
         <nav class="navegacion-minima">
           <a href="#contacto" class="enlace-nav">Contacto</a>
@@ -45,44 +47,66 @@
       >
         <!--Imagen del hero-->
         <div class="row g-0 min-vh-100">
-          <div class="col-12 col-md-6 columna-imagen">
+          <div
+            class="col-12 col-md-6 columna-imagen position-relative vh-100 vh-md-100"
+          >
             <img
               src="img/fotohero.jpeg"
               alt="Detalle de diseño de interiores"
               class="imagen-hero-fondo"
             />
-          </div>
-          <!--Columna derecha-->
-          <div
-            class="col-12 col-md-6 columna-contenido d-flex flex-column justify-content-between p-4 p-lg-5 text-md-start text-center"
-          >
+            <div class="capa-filtro-hero"></div>
             <!--Texto-->
-            <div class="espaciador-superior py-4 py-md-5"></div>
+            <div
+              class="position-absolute top-50 start-50 translate-middle w-100 px-4 text-center z-2 d-md-none"
+            >
+              <h1 class="titulo-principal text-white mb-0">uxuedesign</h1>
+            </div>
+          </div>
 
-            <div class="bloque-informacion my-auto">
-              <h1 class="titulo-principal mb-3">
+          <div
+            class="col-12 col-md-6 columna-contenido d-flex flex-column justify-content-between justify-content-md-end p-5 text-md-start text-center vh-100 vh-md-auto bg-dark-movil"
+          >
+            <div class="espaciador-superior py-4 py-md-3"></div>
+
+            <div
+              class="bloque-informacion w-100 d-flex flex-column justify-content-around flex-grow-1 flex-md-grow-0 py-3"
+            >
+              <h2 class="titulo-secundario-hero text-white-movil m-0">
                 Diseño de espacios y productos pensados para las personas.
-              </h1>
-              <p class="descripcion-hero mb-4">
+              </h2>
+
+              <p class="descripcion-hero text-white-movil mx-auto m-0">
                 ¡Hola! soy Uxue, diseñadora generalista enfocada en interiores y
                 producto con una mirada social. Me apasiona crear entornos y
                 soluciones funcionales que, además de ser estéticas, respondan a
                 necesidades reales de la gente.
               </p>
-            </div>
-            <!--Botones-->
-            <div
-              class="bloque-inferior d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3 pt-4 border-top-azul"
-            >
-              <div class="enlaces-secundarios d-flex gap-3 text-uppercase">
-                <a href="about.html" class="enlace-secundario-nav">Sobre mí</a>
-                <a href="#habilidades" class="enlace-secundario-nav"
+
+              <!--Botones-->
+
+              <div
+                class="enlaces-secundarios d-flex justify-content-center justify-content-md-start gap-4 text-uppercase pb-3 border-bottom-fino m-0"
+              >
+                <a
+                  href="about.html"
+                  class="enlace-secundario-nav text-white-movil"
+                  >Sobre mí</a
+                >
+                <a
+                  href="#habilidades"
+                  class="enlace-secundario-nav text-white-movil"
                   >Habilidades</a
                 >
               </div>
+            </div>
+
+            <div
+              class="bloque-inferior d-flex justify-content-center justify-content-md-start align-items-center pt-2 mb-4 mb-md-0"
+            >
               <a
                 href="proyectos.html"
-                class="btn-portfolio-pildora text-decoration-none"
+                class="btn-portfolio-pildora text-decoration-none w-100 w-sm-auto text-center"
               >
                 Explorar Proyectos →
               </a>
@@ -91,6 +115,36 @@
         </div>
       </section>
     </main>
+    <!-- Footer (aquí solo el de tipo móvil)-->
+    <footer
+      class="pie-pagina-compacto container-fluid px-4 pb-4 pt-2 d-block d-md-none"
+    >
+      <div class="linea-separadora-fina mb-4"></div>
+      <div
+        class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3 text-center text-sm-start"
+      >
+        <div class="bloque-copy-corto">
+          <span class="texto-copyright-min d-block">© 2026 uxuedesign</span>
+          <span class="texto-sub-min">Tecnología de Diseño para Internet.</span>
+        </div>
+        <div class="redes-minimas d-flex gap-4">
+          <a
+            href="https://www.linkedin.com/in/uxue-moyano-mart%C3%AD/"
+            target="_blank"
+            rel="noopener"
+            class="enlace-min-footer"
+            >LinkedIn</a
+          >
+          <a
+            href="https://www.instagram.com/uxuedesign/"
+            target="_blank"
+            rel="noopener"
+            class="enlace-min-footer"
+            >Instagram</a
+          >
+        </div>
+      </div>
+    </footer>
 
     <!--JavaScript de Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
