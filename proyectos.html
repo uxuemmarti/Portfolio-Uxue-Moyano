@@ -25,37 +25,58 @@
   <body>
     <!--Navbar y logo-->
     <header
-      class="cabecera-principal position-absolute top-0 start-0 w-100 py-4 border-bottom border-secondary border-opacity-25"
+      class="cabecera-principal navbar navbar-expand-md position-absolute top-0 start-0 w-100 py-4 border-bottom border-secondary border-opacity-25"
     >
       <div
         class="container-fluid px-4 px-lg-5 d-flex justify-content-between align-items-center"
       >
-        <a href="index.html" class="enlace-logo">
+        <a href="index.html" class="enlace-logo navbar-brand p-0 m-0">
           <img src="img/logouxue.png" alt="Uxue Design Logo" class="logo" />
         </a>
-        <nav class="navegacion-minima">
-          <a href="proyectos.html" class="enlace-nav me-4 active">Proyectos</a>
-          <a href="about.html" class="enlace-nav me-4">Sobre mí</a>
-          <a href="index.html#habilidades" class="enlace-nav me-4"
-            >Habilidades</a
-          >
-          <a href="#contacto" class="enlace-nav">Contacto</a>
-        </nav>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="menuPrincipal"
+        >
+          <nav class="navegacion-minima navbar-nav pt-3 pt-md-0">
+            <a href="proyectos.html" class="enlace-nav nav-link active"
+              >Proyectos</a
+            >
+            <a href="about.html" class="enlace-nav nav-link">Sobre mí</a>
+            <a href="index.html#habilidades" class="enlace-nav nav-link"
+              >Habilidades</a
+            >
+            <a href="#contacto" class="enlace-nav nav-link pe-0">Contacto</a>
+          </nav>
+        </div>
       </div>
     </header>
 
     <!--Hero de los proyectos-->
     <main class="seccion-proyectos container-fluid p-0">
       <section
-        class="intro-hero-proyectos px-4 px-lg-5 d-flex flex-column justify-content-between"
+        class="intro-hero-proyectos px-4 px-md-5 d-flex flex-column justify-content-between"
       >
         <div class="pt-5 mt-4"></div>
 
-        <div class="row text-md-start text-center align-items-center my-auto">
-          <div class="col-12 col-lg-7">
+        <div class="row text-center text-md-start align-items-center my-auto">
+          <div class="col-12 col-md-7">
             <h1 class="titulo-seccion-gigante mb-0">Portfolio de proyectos</h1>
           </div>
-          <div class="col-12 col-lg-5 mt-4 mt-lg-0 ps-lg-5">
+
+          <div class="col-12 col-md-5 mt-4 mt-md-0 ps-md-4 ps-lg-5">
             <p class="descripcion-seccion-intro mb-0">
               Aquí puedes encontrar una selección de mis proyectos de
               interiores, producto y gráfico. Trabajos reales pensados para
@@ -82,18 +103,19 @@
             >
               <div class="bloque-botones-filtro">
                 <button class="filtro-item active" data-filter="todos">
-                  Todos los proyectos
+                  Todos <span class="recortar-filtro">los proyectos</span>
                 </button>
                 <button class="filtro-item" data-filter="interiores">
-                  Diseño de Interiores
+                  <span class="recortar-filtro">Diseño de </span>Interiores
                 </button>
                 <button class="filtro-item" data-filter="producto">
-                  Diseño de Producto
+                  <span class="recortar-filtro">Diseño de </span>Producto
                 </button>
                 <button class="filtro-item" data-filter="grafico">
-                  Diseño Gráfico
+                  <span class="recortar-filtro">Diseño </span>Gráfico
                 </button>
               </div>
+
               <span class="contador-proyectos-total text-uppercase"
                 >Proyectos [6]</span
               >

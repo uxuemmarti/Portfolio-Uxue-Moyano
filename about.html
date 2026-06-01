@@ -26,24 +26,43 @@
   <body>
     <!--Navbar y logo-->
     <header
-      class="cabecera-principal position-absolute top-0 start-0 w-100 py-4 border-bottom border-secondary border-opacity-25"
+      class="cabecera-principal navbar navbar-expand-md position-absolute top-0 start-0 w-100 py-4 border-bottom border-secondary border-opacity-25"
     >
       <div
         class="container-fluid px-4 px-lg-5 d-flex justify-content-between align-items-center"
       >
-        <a href="index.html" class="enlace-logo">
+        <a href="index.html" class="enlace-logo navbar-brand p-0 m-0">
           <img src="img/logouxue.png" alt="Uxue Design Logo" class="logo" />
         </a>
-        <nav class="navegacion-minima">
-          <a href="proyectos.html" class="enlace-nav me-4 active">Proyectos</a>
-          <a href="about.html" class="enlace-nav me-4">Sobre mí</a>
-          <a href="index.html#habilidades" class="enlace-nav me-4"
-            >Habilidades</a
-          >
-          <a href="#contacto" class="enlace-nav">Contacto</a>
-        </nav>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="menuPrincipal"
+        >
+          <nav class="navegacion-minima navbar-nav pt-3 pt-md-0">
+            <a href="proyectos.html" class="enlace-nav nav-link">Proyectos</a>
+            <a href="about.html" class="enlace-nav nav-link active">Sobre mí</a>
+            <a href="index.html#habilidades" class="enlace-nav nav-link"
+              >Habilidades</a
+            >
+            <a href="#contacto" class="enlace-nav nav-link pe-0">Contacto</a>
+          </nav>
+        </div>
       </div>
     </header>
+
     <!--Texto sobre mí-->
     <main id="sobre-mi" class="seccion-sobre-mi container-fluid p-0">
       <div class="row g-0 align-items-stretch">
