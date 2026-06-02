@@ -1,0 +1,71 @@
+.seccion-contacto {
+  min-height: 100vh;
+  background-color: var(--fondo);
+  display: block;
+  align-items: center;
+}
+
+.titulo-contacto-gigante {
+  font-family: var(--fuente-titulos);
+  color: var(--azul-vibrante);
+  font-size: calc(2.2rem + 1.8vw);
+  font-weight: 500;
+}
+
+.descripcion-contacto {
+  font-family: var(--fuente-cuerpo);
+  color: var(--azul-texto);
+  font-size: 1.1rem;
+  max-width: 520px;
+  line-height: 1.5;
+}
+
+.grupo-input-lineal {
+  position: relative;
+}
+
+.label-contacto {
+  font-family: var(--fuente-cuerpo);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--azul-vibrante);
+  margin-bottom: 8px;
+}
+
+.input-lineal {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid rgba(0, 47, 167, 0.2) !important; /* Línea fina de marca */
+  border-radius: 0 !important;
+  padding: 10px 0 !important;
+  font-family: var(--fuente-cuerpo);
+  color: var(--azul-vibrante) !important;
+  font-size: 1.05rem;
+  box-shadow: none !important;
+  transition: border-color 0.3s ease !important;
+}
+
+.input-lineal::placeholder {
+  color: var(--lineas);
+  font-size: 0.95rem;
+}
+
+.input-lineal:focus {
+  border-bottom: 1px solid var(--azul-vibrante) !important;
+}
+
+.input-lineal.is-invalid {
+  border-bottom: 1px solid #dc3545 !important;
+}
+
+.alert-success-uxue {
+  background-color: transparent;
+  border: 1px solid var(--azul-vibrante);
+  color: var(--azul-vibrante);
+  font-family: var(--fuente-cuerpo);
+  font-weight: 500;
+  padding: 1rem;
+  border-radius: 4px;
+}

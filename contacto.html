@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>proyectos | uxuedesign</title>
+    <title>contacto | uxuedesign</title>
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,7 +25,7 @@
   <body>
     <!--Navbar y logo-->
     <header
-      class="cabecera-principal navbar navbar-expand-md position-absolute top-0 start-0 w-100 py-4 border-bottom border-secondary border-opacity-25"
+      class="cabecera-principal navbar navbar-expand-md top-0 start-0 w-100 py-4 border-bottom border-secondary border-opacity-25"
     >
       <div
         class="container-fluid px-4 px-lg-5 d-flex justify-content-between align-items-center"
@@ -51,14 +51,12 @@
           id="menuPrincipal"
         >
           <nav class="navegacion-minima navbar-nav pt-3 pt-md-0">
-            <a href="proyectos.html" class="enlace-nav nav-link active"
-              >Proyectos</a
-            >
+            <a href="proyectos.html" class="enlace-nav nav-link">Proyectos</a>
             <a href="about.html" class="enlace-nav nav-link">Sobre mí</a>
             <a href="index.html#habilidades" class="enlace-nav nav-link"
               >Habilidades</a
             >
-            <a href="contacto.html" class="enlace-nav nav-link pe-0"
+            <a href="contacto.html" class="enlace-nav nav-link pe-0 active"
               >Contacto</a
             >
           </nav>
@@ -66,67 +64,83 @@
       </div>
     </header>
 
-    <!--Hero de los proyectos-->
-    <main class="seccion-proyectos container-fluid p-0">
-      <section
-        class="intro-hero-proyectos px-4 px-md-5 d-flex flex-column justify-content-between"
-      >
-        <div class="pt-5 mt-4"></div>
-
-        <div class="row text-center text-md-start align-items-center my-auto">
-          <div class="col-12 col-md-7">
-            <h1 class="titulo-seccion-gigante mb-0">Portfolio de proyectos</h1>
-          </div>
-
-          <div class="col-12 col-md-5 mt-4 mt-md-0 ps-md-4 ps-lg-5">
-            <p class="descripcion-seccion-intro mb-0">
-              Aquí puedes encontrar una selección de mis proyectos de
-              interiores, producto y gráfico. Trabajos reales pensados para
-              resolver necesidades del día a día de las personas.
+    <!--Formulario-->
+    <main
+      class="seccion-contacto container-fluid p-0 d-flex align-items-center"
+    >
+      <div class="container py-5 mt-5 pt-0 pt-md-0">
+        <div class="row justify-content-center">
+          <div class="col-11 col-md-10 col-lg-6 text-center">
+            <h1 class="titulo-contacto-gigante mb-3">¡Hablemos!</h1>
+            <p class="descripcion-contacto mb-5 mx-auto">
+              ¿Tienes un proyecto en mente, buscas colaborar o simplemente te
+              apetece charlar sobre diseño? Cuéntame un poco más sobre ti.
             </p>
-          </div>
-        </div>
 
-        <div class="d-flex justify-content-center pb-5">
-          <a
-            href="#galeria"
-            class="texto-descubrir-puro text-uppercase text-decoration-none"
-            >Descubrir</a
-          >
-        </div>
-      </section>
-      <!--Galería de proyectos-->
-      <section id="galeria" class="zona-galeria-proyectos px-4 px-lg-5">
-        <div class="row contenedor-filtros-global">
-          <div class="col-12">
-            <div class="linea-separadora-fina mb-4"></div>
-            <div
-              class="d-flex justify-content-between align-items-center flex-wrap gap-3 pb-3"
+            <form
+              id="formContacto"
+              class="needs-validation text-start"
+              novalidate
             >
-              <div class="bloque-botones-filtro">
-                <button class="filtro-item active" data-filter="todos">
-                  Todos <span class="recortar-filtro">los proyectos</span>
-                </button>
-                <button class="filtro-item" data-filter="interiores">
-                  <span class="recortar-filtro">Diseño de </span>Interiores
-                </button>
-                <button class="filtro-item" data-filter="producto">
-                  <span class="recortar-filtro">Diseño de </span>Producto
-                </button>
-                <button class="filtro-item" data-filter="grafico">
-                  <span class="recortar-filtro">Diseño </span>Gráfico
-                </button>
+              <div class="mb-4 grupo-input-lineal">
+                <label for="nombre" class="label-contacto"
+                  >¿Cómo te llamas?</label
+                >
+                <input
+                  type="text"
+                  class="form-control input-lineal"
+                  id="nombre"
+                  placeholder="Tu nombre completo"
+                  required
+                />
               </div>
 
-              <span class="contador-proyectos-total text-uppercase"
-                >Proyectos [6]</span
-              >
+              <div class="mb-4 grupo-input-lineal">
+                <label for="email" class="label-contacto"
+                  >Correo electrónico</label
+                >
+                <input
+                  type="email"
+                  class="form-control input-lineal"
+                  id="email"
+                  placeholder="nombre@ejemplo.com"
+                  required
+                />
+              </div>
+
+              <div class="mb-5 grupo-input-lineal">
+                <label for="mensaje" class="label-contacto"
+                  >Cuéntame sobre tu idea o espacio</label
+                >
+                <textarea
+                  class="form-control input-lineal"
+                  id="mensaje"
+                  rows="3"
+                  placeholder="Escribe tu mensaje aquí..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="text-center">
+                <button
+                  type="submit"
+                  class="btn-portfolio-pildora px-5 py-3 border-0"
+                >
+                  Enviar Mensaje →
+                </button>
+              </div>
+            </form>
+
+            <div
+              id="mensajeEnviado"
+              class="alert alert-success-uxue mt-4 d-none"
+            >
+              ¡Mensaje enviado! Gracias por contactar. Te responderé lo antes
+              posible.
             </div>
           </div>
         </div>
-
-        <div class="grid-proyectos pt-2"></div>
-      </section>
+      </div>
     </main>
     <!--Footer-->
     <footer
@@ -219,6 +233,6 @@
     <!--JavaScript de Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!--Mi JavaScript-->
-    <script src="js/proyectos.js"></script>
+    <script src="js/contacto.js"></script>
   </body>
 </html>
