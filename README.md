@@ -3,7 +3,7 @@
 Entrega final de la asignatura "Taller de Diseño para Internet"
 
 **Link al portfolio:**
-https://github.com/uxuemmarti/portfolio-uxue-moyano
+https://uxuemmarti.github.io/Portfolio-Uxue-Moyano/
 
 ## Vista de mi web
 
