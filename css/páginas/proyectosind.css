@@ -37,7 +37,7 @@
 /* Ficha Técnica */
 .ficha-tecnica-proyecto {
   background-color: transparent;
-  border: 1px solid rgba(0, 47, 167, 0.15);
+  border: 1px solid var(--lineas);
   border-radius: 2px;
 }
 
@@ -66,15 +66,15 @@
 /* Carrusel */
 
 .carousel-inner {
-  border: 1px solid rgba(0, 47, 167, 0.15);
+  border: 1px solid var(--lineas);
   border-radius: 2px;
-  background-color: #fff;
+  background-color: var(--fondo);
 }
 
 .img-carrusel {
   height: 550px;
   object-fit: contain;
-  background-color: #fff;
+  background-color: var(--fondo);
 }
 
 /* Flechitas y rayitas */
@@ -117,7 +117,6 @@
 #imagenLightbox {
   max-height: 85vh; /* Evita que obligue a hacer scroll vertical */
   object-fit: contain;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
 #lightboxModal .btn-close {

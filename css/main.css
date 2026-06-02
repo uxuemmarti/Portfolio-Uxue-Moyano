@@ -107,6 +107,24 @@ body {
   border-radius: 50px;
   border: 1px solid var(--azul-texto);
 }
+.btn-portfolio-pildora,
+.enlace-secundario-nav,
+.enlace-nav,
+.filtro-item,
+.tarjeta-proyecto {
+  transition:
+    transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+    opacity 0.3s ease;
+  display: inline-block;
+}
+.btn-portfolio-pildora:hover,
+.enlace-secundario-nav:hover,
+.enlace-nav:hover,
+.filtro-item:hover,
+.tarjeta-proyecto:hover {
+  transform: scale(1.03);
+  opacity: 0.95;
+}
 
 /* -- Responsive -- */
 
@@ -134,5 +152,34 @@ body {
 
   .bloque-informacion .enlaces-secundarios {
     margin-top: 1rem;
+  }
+}
+
+/*Animaciones con JavaScript*/
+
+.elemento-oculto {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.elemento-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animacion-saltito {
+  animation: saltitoConstante 2s infinite ease-in-out;
+}
+
+@keyframes saltitoConstante {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
   }
 }

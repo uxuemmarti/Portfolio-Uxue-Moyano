@@ -177,7 +177,7 @@
   gap: 0.5rem;
 }
 
-@media (max-width: 767) {
+@media (max-width: 767px) {
   .bloque-botones-filtro .recortar-filtro {
     display: none;
   }

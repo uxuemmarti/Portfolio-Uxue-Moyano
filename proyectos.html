@@ -21,6 +21,35 @@
     <link rel="stylesheet" href="css/main.css" />
     <!--Favicon-->
     <link rel="icon" type="image/png" href="img/logouxue.png" />
+    <!--Meta tags de SEO y Open Graph-->
+    <meta
+      name="description"
+      content="Explora el portfolio de proyectos de Uxue Design"
+    />
+    <meta
+      name="keywords"
+      content="proyectos de diseño, portafolio diseño, interiores, diseño producto, Uxue"
+    />
+    <meta name="author" content="Uxue Design" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Proyectos | Uxue Design" />
+    <meta
+      property="og:description"
+      content="Selección de trabajos reales de interiores, producto y gráfico pensados para resolver necesidades del día a día."
+    />
+    <meta property="og:image" content="https://tuweb.com/img/logouxue.png" />
+    <meta property="og:url" content="https://tuweb.com/proyectos.html" />
+    <meta property="og:site_name" content="Uxue Design" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Proyectos | Uxue Design" />
+    <meta
+      name="twitter:description"
+      content="Selección de trabajos de interiores, producto y gráfico."
+    />
+    <meta name="twitter:image" content="https://tuweb.com/img/logouxue.png" />
   </head>
   <body>
     <!--Navbar y logo-->
@@ -77,11 +106,13 @@
           class="row text-center text-ld-start align-items-center justify-content-center justify-content-lg-start my-auto"
         >
           <div class="col-12 col-lg-7">
-            <h1 class="titulo-seccion-gigante mb-0">Portfolio de proyectos</h1>
+            <h1 class="titulo-seccion-gigante mb-0 aparicion elemento-oculto">
+              Portfolio de proyectos
+            </h1>
           </div>
 
           <div class="col-12 col-md-12 col-lg-4 mt-4 ps-md-4 ps-lg-5">
-            <p class="descripcion-seccion-intro mb-0">
+            <p class="descripcion-seccion-intro mb-0 aparicion elemento-oculto">
               Aquí puedes encontrar una selección de mis proyectos de
               interiores, producto y gráfico. Trabajos reales pensados para
               resolver necesidades del día a día de las personas.
@@ -92,7 +123,7 @@
         <div class="d-flex justify-content-center pb-5">
           <a
             href="#galeria"
-            class="texto-descubrir-puro text-uppercase text-decoration-none"
+            class="texto-descubrir-puro text-uppercase text-decoration-none animacion-saltito"
             >Descubrir</a
           >
         </div>
@@ -222,5 +253,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!--Mi JavaScript-->
     <script src="js/proyectos.js"></script>
+    <script src="js/animaciones.js"></script>
   </body>
 </html>
