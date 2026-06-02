@@ -3,10 +3,11 @@
 const proyectos = [
   {
     id: 1,
-    titulo: "Proyecto 1",
+    titulo: "Airstream",
     categoria: "interiores",
-    imagen: "img/proyecto1.jpg",
+    imagen: "img/renderairst2.jpg",
     claseAltura: "altura-alta",
+    url: "airstream.html",
   },
   {
     id: 2,
@@ -62,7 +63,7 @@ function renderizarProyectos(listaProyectos) {
       proyecto.categoria.charAt(0).toUpperCase() + proyecto.categoria.slice(1);
 
     const tarjetaHTML = `
-      <div class="tarjeta-proyecto" data-category="${proyecto.categoria}">
+      <a href="${proyecto.url}" class="tarjeta-proyecto text-decoration-none" data-category="${proyecto.categoria}">
         <div class="contenedor-tarjeta ${proyecto.claseAltura}">
           <div class="capa-imagen">
             <img src="${proyecto.imagen}" alt="Imagen de ${proyecto.titulo}" />
@@ -72,7 +73,7 @@ function renderizarProyectos(listaProyectos) {
             <h3 class="titulo-tarjeta">${proyecto.titulo}</h3>
           </div>
         </div>
-      </div>
+      </a>
     `;
 
     // Lo inyectamos en el grid

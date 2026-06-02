@@ -1,0 +1,198 @@
+/* Contenido */
+.seccion-detalle-proyecto {
+  min-height: 100vh;
+  background-color: var(--fondo);
+  padding-top: 160px;
+  box-sizing: border-box;
+}
+
+.subtitulo-detalle {
+  font-family: var(--fuente-cuerpo);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  color: var(--azul-vibrante);
+  opacity: 0.7;
+}
+
+.linea-decorativa {
+  width: 60px;
+  height: 2px;
+  background-color: var(--azul-vibrante);
+}
+
+.descripcion-proyecto p {
+  font-family: var(--fuente-cuerpo);
+  color: var(--azul-texto);
+  font-size: 1.15rem;
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+
+.descripcion-proyecto strong {
+  font-weight: 600;
+  color: var(--azul-vibrante);
+}
+
+/* Ficha Técnica */
+.ficha-tecnica-proyecto {
+  background-color: transparent;
+  border: 1px solid rgba(0, 47, 167, 0.15);
+  border-radius: 2px;
+}
+
+.titulo-ficha {
+  font-family: var(--fuente-cuerpo);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  color: var(--azul-vibrante);
+}
+
+.propiedad-ficha {
+  font-family: var(--fuente-cuerpo);
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: var(--azul-vibrante);
+  opacity: 0.8;
+}
+
+.valor-ficha {
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.95rem;
+  color: var(--azul-texto);
+}
+
+/* Carrusel */
+
+.carousel-inner {
+  border: 1px solid rgba(0, 47, 167, 0.15);
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.img-carrusel {
+  height: 550px;
+  object-fit: contain;
+  background-color: #fff;
+}
+
+/* Flechitas y rayitas */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--azul-vibrante);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-size: 45% 45%;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: var(--azul-vibrante);
+  transform: scale(1.05);
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--azul-vibrante);
+  height: 3px;
+  opacity: 0.25;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+/* Imñagenes en grande */
+
+.modal-backdrop.show {
+  opacity: 0.85;
+}
+
+#imagenLightbox {
+  max-height: 85vh; /* Evita que obligue a hacer scroll vertical */
+  object-fit: contain;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+#lightboxModal .btn-close {
+  z-index: 1060;
+  background-color: var(--lineas);
+  padding: 12px;
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: all 0.2s ease;
+}
+
+#lightboxModal .btn-close:hover {
+  opacity: 1;
+  background-color: var(--azul-vibrante);
+}
+
+/* Responsive en ipad y móvil */
+
+@media (max-width: 768px) {
+  .seccion-detalle-proyecto .titulo-seccion-gigante {
+    font-size: 2rem;
+    line-height: 1.1;
+    padding-top: 40px;
+  }
+
+  .img-carrusel {
+    height: 55vw;
+    min-height: 220px;
+  }
+
+  .ficha-tecnica-proyecto .item-ficha {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 4px;
+    padding: 12px 0;
+  }
+
+  .valor-ficha {
+    text-align: left !important;
+    font-size: 0.9rem;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 36px;
+    height: 36px;
+    background-size: 40% 40%;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 12%;
+  }
+  #imagenLightbox {
+    max-height: 75vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .img-carrusel {
+    height: 240px;
+    .seccion-detalle-proyecto {
+      padding-top: 150px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .img-carrusel {
+    min-height: 180px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 32px;
+    height: 32px;
+  }
+}

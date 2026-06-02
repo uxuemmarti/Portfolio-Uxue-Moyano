@@ -1,12 +1,13 @@
 /* Enlaces de CSS */
 
-@import "variables.css";
-@import "components/proyectos.css";
+@import "components/variables.css";
 @import "components/footer.css";
-@import "components/about.css";
 @import "components/menu.css";
-@import "components/contacto.css";
-@import "components/habilidades.css";
+@import "páginas/proyectos.css";
+@import "páginas/about.css";
+@import "páginas/contacto.css";
+@import "páginas/habilidades.css";
+@import "páginas/proyectosind.css";
 
 /* General */
 
@@ -25,6 +26,8 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+
+/* --Home-- */
 
 /* Hero */
 
