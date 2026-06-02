@@ -85,10 +85,10 @@ botonesFiltro.forEach((boton) => {
   boton.addEventListener("click", (e) => {
     // Gestionar la clase activa en los botones
     botonesFiltro.forEach((b) => b.classList.remove("active"));
-    e.target.classList.add("active");
+    e.currentTarget.classList.add("active");
 
     // Capturar la categoría que queremos filtrar
-    const filtroSeleccionado = e.target.getAttribute("data-filter");
+    const filtroSeleccionado = e.currentTarget.getAttribute("data-filter");
 
     if (filtroSeleccionado === "todos") {
       // Si pulsa todos, renderizamos el array completo original

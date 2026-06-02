@@ -35,16 +35,16 @@
 }
 
 .input-lineal {
-  background: transparent !important;
-  border: none !important;
-  border-bottom: 1px solid rgba(0, 47, 167, 0.2) !important; /* Línea fina de marca */
-  border-radius: 0 !important;
-  padding: 10px 0 !important;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--lineas);
+  border-radius: 0;
+  padding: 10px 0;
   font-family: var(--fuente-cuerpo);
-  color: var(--azul-vibrante) !important;
+  color: var(--azul-vibrante);
   font-size: 1.05rem;
-  box-shadow: none !important;
-  transition: border-color 0.3s ease !important;
+  box-shadow: none;
+  transition: border-color 0.3s ease;
 }
 
 .input-lineal::placeholder {
@@ -53,11 +53,11 @@
 }
 
 .input-lineal:focus {
-  border-bottom: 1px solid var(--azul-vibrante) !important;
+  border-bottom: 1px solid var(--azul-vibrante);
 }
 
 .input-lineal.is-invalid {
-  border-bottom: 1px solid #dc3545 !important;
+  border-bottom: 1px solid var(error);
 }
 
 .alert-success-uxue {

@@ -1,0 +1,68 @@
+.titulo-seccion-gigante {
+  font-size: 3.5rem;
+}
+
+.seccion-habilidades {
+  min-height: 100vh;
+  background-color: var(--fondo);
+  padding-top: 160px;
+  box-sizing: border-box;
+}
+
+.linea-decorativa-corta {
+  width: 60px;
+  height: 2px;
+  background-color: var(--azul-vibrante);
+  margin-top: 15px;
+}
+
+.subtitulo-habilidades {
+  font-family: var(--fuente-cuerpo);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--azul-vibrante);
+  opacity: 0.8;
+}
+
+.h2-habilidades {
+  font-family: var(--fuente-titulos);
+  font-weight: 500;
+  color: var(--azul-vibrante);
+  font-size: 2rem;
+  letter-spacing: -0.01em;
+}
+
+.descripcion-habilidades {
+  font-family: var(--fuente-cuerpo);
+  color: var(--azul-texto);
+  font-size: 1.15rem;
+  line-height: 1.65;
+}
+
+.descripcion-habilidades strong {
+  font-weight: 600;
+  color: var(--azul-vibrante);
+}
+
+.tag-software {
+  font-family: var(--fuente-cuerpo);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--azul-vibrante);
+  background-color: transparent;
+  border: 1px solid var(--lineas);
+  padding: 10px 22px;
+  border-radius: 50px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.tag-software:hover {
+  border-color: var(--azul-vibrante);
+  background-color: var(--lineas);
+  transform: translateY(-1px);
+}
+
+.seccion-habilidades .titulo-seccion-gigante {
+  margin-top: 100px;
+}

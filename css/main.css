@@ -6,6 +6,7 @@
 @import "components/about.css";
 @import "components/menu.css";
 @import "components/contacto.css";
+@import "components/habilidades.css";
 
 /* General */
 
@@ -13,23 +14,6 @@ body {
   background-color: var(--fondo);
   color: var(--azul-vibrante);
   font-family: var(--fuente-cuerpo);
-}
-
-/* Navbar */
-
-.cabecera-principal {
-  z-index: 10;
-  background-color: var(--fondo);
-}
-
-.cabecera-principal1 {
-  z-index: 10;
-}
-
-.logo {
-  width: 85px;
-  height: 85px;
-  object-fit: contain;
 }
 
 .enlace-nav {
@@ -133,42 +117,19 @@ body {
   font-family: var(--fuente-titulos);
 }
 
-/* Contacto blanco */
-.cabecera-adaptativa .enlace-nav {
-  color: #ffffff !important;
-}
-
-/* Línea sutil decorativa para el menú intermedio de móvil */
-.border-bottom-fino {
-  border-bottom: 1px solid var(--lineas);
-  width: 100%;
-}
-
 @media (min-width: 768px) {
-  .cabecera-adaptativa .enlace-nav {
-    color: var(--azul-vibrante) !important;
-  }
-
   .titulo-secundario-hero {
-    font-size: 3rem !important;
-    margin-bottom: 1.5rem !important;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
   }
 
   .bloque-informacion {
-    justify-content: flex-end !important;
-    gap: 1.5rem !important; /* Estrecha la separación entre h2, texto y enlaces */
-    margin-bottom: 2.5rem !important; /* Hueco limpio antes del botón de proyectos */
+    justify-content: flex-end;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
   }
 
   .bloque-informacion .enlaces-secundarios {
-    margin-top: 1rem !important;
-  }
-}
-
-/* Logo más pequeño en móvil */
-@media (max-width: 767px) {
-  .logo {
-    width: 60px;
-    height: 60px;
+    margin-top: 1rem;
   }
 }
